@@ -1,0 +1,90 @@
+.gradual-blur {
+  pointer-events: none;
+  transition: opacity 0.3s ease-out;
+  isolation: isolate;
+}
+
+.gradual-blur-parent {
+  overflow: hidden;
+}
+
+.gradual-blur-page {
+  position: fixed;
+  z-index: 9999;
+}
+
+.gradual-blur-inner {
+  pointer-events: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gradual-blur-inner > div {
+  -webkit-backdrop-filter: inherit;
+  backdrop-filter: inherit;
+}
+
+/* Responsive breakpoints for advanced blur */
+@media (max-width: 480px) {
+  .gradual-blur {
+    --mobile-scale: 0.8;
+  }
+}
+
+@media (max-width: 768px) {
+  .gradual-blur {
+    --tablet-scale: 0.9;
+  }
+}
+
+@media (max-width: 1024px) {
+  .gradual-blur {
+    --desktop-scale: 1.0;
+  }
+}
+
+/* Animation states */
+.gradual-blur.animated {
+  transition: opacity 0.3s ease-out, backdrop-filter 0.3s ease-out;
+}
+
+.gradual-blur.hover-enabled:hover {
+  transition: backdrop-filter 0.2s ease-in-out;
+}
+
+/* Preset styles for common use cases */
+.gradual-blur.preset-subtle {
+  opacity: 0.8;
+}
+
+.gradual-blur.preset-intense {
+  opacity: 1;
+}
+
+.gradual-blur.preset-smooth {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gradual-blur.preset-sharp {
+  transition: all 0.1s linear;
+}
+
+/* Fallback for browsers without backdrop-filter support */
+@supports not (backdrop-filter: blur(1px)) {
+  .gradual-blur-inner > div {
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0.5;
+  }
+}
+
+/* Fixed positioning utility class */
+.gradual-blur-fixed {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1000;
+}
