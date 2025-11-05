@@ -330,7 +330,7 @@ const Rules = () => {
                       ease: "linear",
                     }}
                   >
-                    ₹70,000/-
+                    ₹50,000/-
                     {/* Shine Effect */}
                     <motion.span
                       className="absolute inset-0"
@@ -352,7 +352,7 @@ const Rules = () => {
                         repeatDelay: 1,
                       }}
                     >
-                      ₹70,000/-
+                      ₹50,000/-
                     </motion.span>
                   </motion.span>
                 </motion.div>

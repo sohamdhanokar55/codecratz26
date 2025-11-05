@@ -16,6 +16,22 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   useEffect(() => {
+    // Set Codecratz metadata when mounted (for /codecratz route)
+    document.title = "CODECRATZ'26-Agnel Polytechnic,Vashi";
+    const ensureFavicon = (href: string) => {
+      let link = document.querySelector(
+        "link[rel='icon']"
+      ) as HTMLLinkElement | null;
+      if (!link) {
+        link = document.createElement("link");
+        link.rel = "icon";
+        document.head.appendChild(link);
+      }
+      link.type = "image/png";
+      link.href = "/2.png";
+    };
+    ensureFavicon("/2.png");
+
     // Animate elements on scroll
     const animateOnScroll = () => {
       const elements = document.querySelectorAll(".fade-in-up");

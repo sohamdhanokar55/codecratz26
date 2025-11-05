@@ -46,13 +46,13 @@ const technicalTeam: TeamMember[] = [
     phone: "+91 7045014174",
   },
   {
-    name: "Soham Dhanokar",
-    role: "OCM Head",
-    image: "/team/Soham.png",
-    email: "soham@apvcouncil.in",
-    linkedin: "https://www.linkedin.com/in/soham-dhanokar-13807a355/",
-    whatsapp: "+91 9321895202",
-    phone: "+91 9321895202",
+    name: "Swara Hande",
+    role: "Senior OCM Member",
+    image: "/team/Swara.png",
+    email: "swara@apvcouncil.in",
+    linkedin: "https://www.linkedin.com/in/swara-hande-9a8277356/",
+    whatsapp: "+91 9372472223",
+    phone: "+91 9372472223",
   },
 ];
 
