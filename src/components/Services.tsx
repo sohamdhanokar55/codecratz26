@@ -14,7 +14,18 @@ import {
   Gamepad2,
 } from "lucide-react";
 
-const problemStatements = [
+interface ProblemStatement {
+  id: string;
+  icon: any;
+  title: string;
+  subtitle: string;
+  description: string;
+  features: string[];
+  browniePoints?: string[];
+  gradient: string;
+}
+
+const problemStatements: ProblemStatement[] = [
   {
     id: "PS-1",
     icon: Wallet,
@@ -66,17 +77,23 @@ const problemStatements = [
   },
   {
     id: "PS-4",
-    icon: Smartphone,
-    title: "Mobile Attendance System",
-    subtitle: "Modern attendance management for educational institutions",
+    icon: Shield,
+    title: "Campus Security & Emergency Response App",
+    subtitle: "Your campus shield for instant alerts, rapid response, and safer student life",
     description:
-      "In many educational institutions, tracking student attendance is often done manually or through outdated systems, leading to inefficiencies, inaccuracies, and a lack of real-time data. A more streamlined and reliable system is crucial for improving the educational experience.",
+      "College campuses often struggle to respond quickly to emergencies such as harassment, medical incidents, theft, or suspicious activities. Traditional reporting methods rely on manual communication, security guards, or slow administrative processes, which can lead to delayed responses and compromised student safety. To solve this, develop a real-time campus safety application that enables students to instantly report threats or emergencies with location details, media evidence, and panic features. The system ensures rapid action by campus security, creates accountability, and fosters a proactive safety environment.",
     features: [
-      "Mobile-based attendance marking",
-      "Real-time attendance tracking",
-      "Automated report generation",
-      "Student engagement analytics",
-      "Integration with existing systems",
+      "Instant emergency reporting with live location - Students can report threats or emergencies with a single tap with campus security",
+      "Photo & video evidence upload - Users can quickly capture and send visual proof of suspicious behaviour or incidents to ensure accurate response",
+      "Panic/SOS button with vibration confirmation - The emergency button instantly triggers a distress alert when pressed, sends live location to pre-set contacts, with vibration feedback confirmation",
+      "Real-time security dashboard for authorities - Campus officials instantly receive emergency alerts containing the student's photo and personal details for quick verification and situational awareness",
+      "Secure chat & quick response communication - Two-way in-app chat for immediate assistance and guidance during emergencies",
+      "Incident status updates & closure proof - Students can see whether a complaint is Viewed, Assigned, Responded, or Closed, ensuring transparency",
+    ],
+    browniePoints: [
+      "AI-powered threat level detection based on message keywords & behavior patterns",
+      "Bluetooth & IoT panic beacons installed in isolated areas",
+      "Wearable smartwatch SOS integration",
     ],
     gradient: "from-orange-500 to-red-600",
   },
@@ -247,6 +264,24 @@ const Services = () => {
                     )}
                   </div>
                 </div>
+
+                {problemStatements[selectedProblem].browniePoints && (
+                  <div className="mb-8">
+                    <h4 className="text-lg font-bold mb-4">
+                      Brownie Point Features
+                    </h4>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                      {problemStatements[selectedProblem].browniePoints.map(
+                        (feature, featureIndex) => (
+                          <div key={featureIndex} className="flex items-start">
+                            <CheckCircle className="w-5 h-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
+                            <span className="text-foreground">{feature}</span>
+                          </div>
+                        )
+                      )}
+                    </div>
+                  </div>
+                )}
 
                 <div className="flex justify-center">
                   <Button
