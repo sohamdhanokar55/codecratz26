@@ -145,7 +145,7 @@ const Footer = () => {
               <li>Venue: Agnel Polytechnic, Vashi</li>
               <li>
                 Support:{" "}
-                <span className="text-foreground">support@apvcouncil.in</span>
+                <span className="text-foreground">team@apvcouncil.in</span>
               </li>
               <li>Sponsorships: sponsors@apvcouncil.in</li>
             </ul>
