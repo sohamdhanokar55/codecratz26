@@ -5,7 +5,7 @@ const Timeline = () => {
   const timelineData = [
     {
       title: "Launch",
-      subtitle: "November 5, 2025",
+      subtitle: "November 6, 2025",
       content: (
         <div className="space-y-4">
           <p className="text-foreground leading-relaxed">
@@ -93,7 +93,7 @@ const Timeline = () => {
       ),
     },
     {
-      title: "First Judging Round",
+      title: "First online Judging Round",
       subtitle: "December 4th Week, 2025",
       content: (
         <div className="space-y-4">
@@ -142,7 +142,7 @@ const Timeline = () => {
       ),
     },
     {
-      title: "First Mentoring Round",
+      title: "First Online Mentoring Round",
       subtitle: "January 2nd Week, 2026",
       content: (
         <div className="space-y-4">

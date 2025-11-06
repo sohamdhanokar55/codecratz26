@@ -66,6 +66,18 @@ const Rules = () => {
                 <div className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
                   <p className="text-foreground">
+                    Each team can participate in only 1 problem statement
+                  </p>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <p className="text-foreground">
+                    Mentors will not be allowed 
+                  </p>
+                </div>
+                <div className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <p className="text-foreground">
                     All the members of your team should be of the same college
                   </p>
                 </div>
@@ -97,6 +109,12 @@ const Rules = () => {
                 </h3>
               </div>
               <div className="space-y-4">
+                 <div className="flex items-start">
+                  <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                  <p className="text-foreground">
+                    1000/- participation fee if your team gets selected for grand finale
+                  </p>
+                </div>
                 <div className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
                   <p className="text-foreground">

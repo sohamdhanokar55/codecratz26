@@ -57,7 +57,7 @@ const faqData: FAQItem[] = [
     id: "8",
     question: "Are there any prizes for winners?",
     answer:
-      "Yes! CODECRATZ'26 offers exciting prizes including cash rewards, certificates, trophies, and other opportunities with our partner companies. The total prize pool is worth over ₹70,000.",
+      "Yes! CODECRATZ'26 offers exciting prizes including cash rewards, certificates, trophies, and other opportunities with our partner companies. The total prize pool is worth over ₹50,000.",
     category: "Prizes",
   },
   {

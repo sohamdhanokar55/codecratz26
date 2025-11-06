@@ -105,8 +105,8 @@ const MapLocation = () => {
               <div className="mt-8 p-4 bg-primary/10 rounded-lg border border-primary/20">
                 <h4 className="font-semibold text-black mb-2">Event Venue</h4>
                 <p className="text-white text-sm">
-                  The hackathon will be conducted in [Specific Building/Hall
-                  Name]. Participants should report to the main reception for
+                  The hackathon will be conducted in Polytechnic Building.
+                  Participants should report to the main reception for
                   registration and further instructions.
                 </p>
               </div>
