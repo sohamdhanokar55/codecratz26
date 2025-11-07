@@ -315,7 +315,7 @@ const Rules = () => {
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
                 <p className="text-xl text-foreground leading-relaxed mb-2">
-                  Winning team will be receiving a prize pool worth
+                  Winning Teams will be receiving a prize pool worth
                 </p>
                 <motion.div
                   className="inline-block"
@@ -348,7 +348,7 @@ const Rules = () => {
                       ease: "linear",
                     }}
                   >
-                    ₹50,000/-
+                    ₹40,000/-
                     {/* Shine Effect */}
                     <motion.span
                       className="absolute inset-0"
@@ -370,7 +370,7 @@ const Rules = () => {
                         repeatDelay: 1,
                       }}
                     >
-                      ₹50,000/-
+                      ₹40,000/-
                     </motion.span>
                   </motion.span>
                 </motion.div>
@@ -399,6 +399,140 @@ const Rules = () => {
               }}
               animate={{
                 opacity: [0.4, 0.8, 0.4],
+                scale: [1, 1.02, 1],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            />
+          </Card>
+        </motion.div>
+
+        {/* Registration Fees Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="max-w-4xl mx-auto mt-8 relative"
+        >
+          <Card className="relative overflow-hidden border-2 border-accent/30 bg-card/50 backdrop-blur-sm">
+            <motion.div
+              className="absolute inset-0 rounded-xl opacity-30"
+              style={{
+                background:
+                  "linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)), hsl(var(--tertiary)))",
+                backgroundSize: "200% 200%",
+              }}
+              animate={{
+                backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+              }}
+              transition={{
+                duration: 5,
+                repeat: Infinity,
+                ease: "linear",
+              }}
+            />
+            <CardContent className="p-8">
+              <motion.div
+                className="flex items-center justify-center mb-6"
+                initial={{ scale: 0.8, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                <motion.h3
+                  className="text-2xl font-bold text-foreground"
+                  initial={{ x: -20, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                >
+                  Registration Fees
+                </motion.h3>
+              </motion.div>
+
+              <motion.div
+                className="text-center"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+              >
+                <motion.div
+                  className="inline-block mb-4"
+                  initial={{ scale: 0.9 }}
+                  whileInView={{ scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 0.5,
+                    delay: 0.5,
+                    type: "spring",
+                    stiffness: 200,
+                  }}
+                >
+                  <motion.span
+                    className="relative inline-block font-bold text-2xl md:text-3xl"
+                    style={{
+                      background:
+                        "linear-gradient(90deg, hsl(var(--accent)), hsl(var(--tertiary)), hsl(var(--primary)), hsl(var(--tertiary)), hsl(var(--accent)))",
+                      backgroundSize: "300% 100%",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                      backgroundClip: "text",
+                    }}
+                    animate={{
+                      backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
+                    }}
+                    transition={{
+                      duration: 4,
+                      repeat: Infinity,
+                      ease: "linear",
+                    }}
+                  >
+                    ₹1,000/-
+                    {/* Shine Effect */}
+                    <motion.span
+                      className="absolute inset-0"
+                      style={{
+                        background:
+                          "linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent)",
+                        backgroundSize: "200% 100%",
+                        WebkitBackgroundClip: "text",
+                        WebkitTextFillColor: "transparent",
+                        backgroundClip: "text",
+                      }}
+                      animate={{
+                        backgroundPosition: ["-100% 0%", "200% 0%"],
+                      }}
+                      transition={{
+                        duration: 2,
+                        repeat: Infinity,
+                        ease: "linear",
+                        repeatDelay: 1,
+                      }}
+                    >
+                      ₹1,000/-
+                    </motion.span>
+                  </motion.span>
+                </motion.div>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Only if selected for Grand Final
+                </p>
+              </motion.div>
+            </CardContent>
+
+            {/* Pulsing Glow Effect */}
+            <motion.div
+              className="absolute inset-0 rounded-xl pointer-events-none"
+              style={{
+                boxShadow:
+                  "0 0 60px hsl(var(--accent) / 0.3), 0 0 100px hsl(var(--tertiary) / 0.2)",
+              }}
+              animate={{
+                opacity: [0.3, 0.6, 0.3],
                 scale: [1, 1.02, 1],
               }}
               transition={{
