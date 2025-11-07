@@ -37,23 +37,19 @@ const problemStatements: ProblemStatement[] = [
     icon: ShieldAlert,
     title: "AI-Powered Cyber Fraud & UPI Scam Detection System",
     subtitle:
-      "Safeguarding digital payments through intelligent fraud detection",
+      "Safeguarding digital payments through intelligent fraud detection.",
     description:
       "The growing popularity of UPI and digital payments has made financial transactions quick and convenient, but it has also opened new doors for cybercriminals. Fraudsters exploit social engineering, fake payment links, and duplicate UPI handles to trick users into unauthorized transfers. Current systems detect fraud only after the transaction occurs, causing monetary losses and loss of trust. To counter this, the proposed system leverages Artificial Intelligence and Machine Learning to monitor, analyze, and predict fraudulent transaction behavior in real time. It learns user spending habits, identifies anomalies, and warns users before suspicious activity can lead to loss — ensuring safer digital payments for individuals and organizations.",
     features: [
-      "AI-based detection of unusual transaction patterns - Machine learning models analyze frequency, amount, receiver ID, and timing of transactions to identify suspicious deviations from normal user behavior",
-      "Real-time fraud alerts and notifications - When a suspicious transaction or phishing attempt is detected, the system instantly alerts the user through push notifications, email, or SMS to prevent further action",
-      "Risk scoring for every UPI transaction - Each transaction is assigned a risk score based on multiple parameters such as new payee detection, time anomalies (odd-hour transactions), and device changes",
-      "Phishing and fake link detection - Integrated NLP-based module detects scam UPI links, fake websites, or QR codes by analyzing URL structures and domain reputation before payment is initiated",
-      "Dashboard for users and admin monitoring - Interactive web/app dashboard displaying real-time flagged transactions, fraud trends, and fraud category breakdown (phishing, impersonation, duplicate ID, etc.)",
-      "Continuous learning from new fraud patterns - AI model retrains automatically with verified fraud reports and new transaction data to stay updated against evolving scam techniques",
+      "AI-based detection of unusual transaction patterns - Machine learning models analyze frequency, amount, receiver ID, and timing of transactions to identify suspicious deviations from normal user behavior.",
+      "Real-time fraud alerts and notifications - When a suspicious transaction or phishing attempt is detected, the system instantly alerts the user through push notifications, email, or SMS to prevent further action.",
+      "Risk scoring for every UPI transaction - Each transaction is assigned a risk score based on multiple parameters such as new payee detection, time anomalies (odd-hour transactions), and device changes.",
+      "Phishing and fake link detection - Integrated NLP-based module detects scam UPI links, fake websites, or QR codes by analyzing URL structures and domain reputation before payment is initiated.",
+      "Dashboard for users and admin monitoring - Interactive web/app dashboard displaying real-time flagged transactions, fraud trends, and fraud category breakdown (phishing, impersonation, duplicate ID, etc.).",
     ],
     browniePoints: [
-      "Integration with banking and UPI APIs - Enables live transaction verification and real-time fraud flagging at the backend level",
-      "AI chatbot for user awareness & reporting - Provides educational insights, scam alerts, and allows users to report suspicious UPI messages or numbers",
-      "Visual analytics & fraud heatmaps - Displays regions or time zones with high scam activity using graphical data visualization",
-      "Blockchain-secured transaction logs - Ensures tamper-proof audit trails for every flagged or verified transaction",
-      "Browser & mobile security extension - Detects and blocks suspicious UPI links or scam websites before a user clicks on them",
+      "AI chatbot for user awareness & reporting - Provides educational insights, scam alerts, and allows users to report suspicious UPI messages or numbers.",
+      "Visual analytics & fraud heatmaps - Displays regions or time zones with high scam activity using graphical data visualization.",
     ],
     gradient: "from-emerald-500 to-teal-600",
   },
@@ -61,7 +57,7 @@ const problemStatements: ProblemStatement[] = [
     id: "PS-2",
     icon: Factory,
     title: "Smart Manufacturing Management System",
-    subtitle: "Empowering small manufacturers with digital tools for efficient production, quality, and inventory control",
+    subtitle: "Empowering small manufacturers with digital tools for efficient production, quality, and inventory control.",
     description:
       "Small and medium-scale manufacturing industries often face difficulties in managing production workflows, tracking inventory, and maintaining product quality — especially when operations are handled manually. Traditional management methods rely heavily on paper-based tracking, individual experience, and inconsistent communication between teams. This results in delayed production, stock shortages, and inefficient quality checks. To overcome these challenges, develop a software-based Smart Manufacturing Management System that integrates production scheduling, inventory management, and quality control into one unified platform. The solution should enhance visibility, improve coordination, and enable data-driven decision-making — without requiring any hardware or IoT setup.",
     features: [
@@ -70,6 +66,7 @@ const problemStatements: ProblemStatement[] = [
       "Digital Quality Control - Create and record inspection checklists, flag defects, and maintain a digital log of quality reports",
       "Centralized Dashboard - Provide a unified interface showing production status, stock levels, and quality metrics through charts or analytics",
       "Report Generation & Data Insights - Export key performance summaries in PDF or Excel format for managerial review and analysis",
+      "AI-Based Production Efficiency Suggestions - Utilize AI algorithms to analyze production data and suggest optimizations in workflow, resource allocation, and process timing to improve overall efficiency and reduce downtime",
     ],
     browniePoints: [
       "AI-based production efficiency suggestions",
@@ -108,16 +105,17 @@ const problemStatements: ProblemStatement[] = [
     id: "PS-4",
     icon: Shield,
     title: "Campus Security & Emergency Response App",
-    subtitle: "Your campus shield for instant alerts, rapid response, and safer student life",
+    subtitle:
+      "Your campus shield for instant alerts, rapid response, and safer student life.",
     description:
       "College campuses often struggle to respond quickly to emergencies such as harassment, medical incidents, theft, or suspicious activities. Traditional reporting methods rely on manual communication, security guards, or slow administrative processes, which can lead to delayed responses and compromised student safety. To solve this, develop a real-time campus safety application that enables students to instantly report threats or emergencies with location details, media evidence, and panic features. The system ensures rapid action by campus security, creates accountability, and fosters a proactive safety environment.",
     features: [
-      "Instant emergency reporting with live location - Students can report threats or emergencies with a single tap with campus security",
-      "Photo & video evidence upload - Users can quickly capture and send visual proof of suspicious behaviour or incidents to ensure accurate response",
-      "Panic/SOS button with vibration confirmation - The emergency button instantly triggers a distress alert when pressed, sends live location to pre-set contacts, with vibration feedback confirmation",
-      "Real-time security dashboard for authorities - Campus officials instantly receive emergency alerts containing the student's photo and personal details for quick verification and situational awareness",
-      "Secure chat & quick response communication - Two-way in-app chat for immediate assistance and guidance during emergencies",
-      "Incident status updates & closure proof - Students can see whether a complaint is Viewed, Assigned, Responded, or Closed, ensuring transparency",
+      "Instant emergency reporting with live location - Students can report threats or emergencies with a single tap with campus security.",
+      "Photo & video evidence upload - Users can quickly capture and send visual proof of suspicious behaviour or incidents to ensure accurate response.",
+      "Panic/SOS button with vibration confirmation - The emergency button instantly triggers a distress alert when pressed. It sends the user’s live location to pre-set contacts for quick assistance. A vibration feedback confirms that the alert has been successfully activated.",
+      "Real-time security dashboard for authorities - Campus officials instantly receive emergency alerts containing the student’s photo and personal details. This allows quick verification and situational awareness during emergencies. They can respond promptly in real time to ensure the student’s safety.",
+      "Secure chat & quick response communication - Two-way in-app chat for immediate assistance and guidance during emergencies.",
+      "Incident status updates & closure proof - Student can see whether a complaint is Viewed, Assigned, Responded, or Closed, ensuring transparency.",
     ],
     browniePoints: [
       "AI-powered threat level detection based on message keywords & behavior patterns",
