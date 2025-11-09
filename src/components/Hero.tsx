@@ -49,7 +49,7 @@ const Hero = () => {
                 size="lg"
                 className="btn-gradient group"
                 onClick={() =>
-                  window.open("https://forms.gle/u94oUvqjZTgK8znu8", "_blank")
+                  window.open("https://forms.gle/DNR6vKFJuj1bSYkeA", "_blank")
                 }
               >
                 Register Now

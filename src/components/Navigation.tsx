@@ -96,7 +96,7 @@ const Navigation = () => {
               size="sm"
               className="btn-gradient text-xs sm:text-sm px-3 sm:px-4"
               onClick={() =>
-                window.open("https://forms.gle/u94oUvqjZTgK8znu8", "_blank")
+                window.open("https://forms.gle/DNR6vKFJuj1bSYkeA", "_blank")
               }
             >
               Register Now

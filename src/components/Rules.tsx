@@ -72,7 +72,7 @@ const Rules = () => {
                 <div className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
                   <p className="text-foreground">
-                    Mentors will not be allowed 
+                    Mentors will not be allowed for 24 hours hackathon,but they can guide the participants
                   </p>
                 </div>
                 <div className="flex items-start">
@@ -109,12 +109,12 @@ const Rules = () => {
                 </h3>
               </div>
               <div className="space-y-4">
-                 <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
                   <p className="text-foreground">
                     1000/- participation fee if your team gets selected for grand finale
                   </p>
-                </div>
+                </div> */}
                 <div className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
                   <p className="text-foreground">
