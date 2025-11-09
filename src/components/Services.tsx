@@ -18,6 +18,7 @@ import {
   Package,
   ShieldAlert,
   AlertTriangle,
+  ExternalLink,
 } from "lucide-react";
 
 interface ProblemStatement {
@@ -28,6 +29,7 @@ interface ProblemStatement {
   description: string;
   features: string[];
   browniePoints?: string[];
+  sources?: string[];
   gradient: string;
 }
 
@@ -102,6 +104,11 @@ const problemStatements: ProblemStatement[] = [
       "Generation of detailed audit logs and compliance documentation",
       "Cloud-enabled architecture for scalability and secure data handling",
       "Automated feedback loop from bid outcomes to continuously improve recommendations",
+    ],
+    sources: [
+      "https://mahatenders.gov.in/nicgep/app",
+      "https://bidplus.gem.gov.in/all-bids",
+      "https://etenders.gov.in/eprocure/app",
     ],
     gradient: "from-purple-500 to-pink-600",
   },
@@ -307,6 +314,29 @@ const Services = () => {
                           <div key={featureIndex} className="flex items-start">
                             <CheckCircle className="w-5 h-5 text-accent mr-3 mt-0.5 flex-shrink-0" />
                             <span className="text-foreground">{feature}</span>
+                          </div>
+                        )
+                      )}
+                    </div>
+                  </div>
+                )}
+
+                {problemStatements[selectedProblem].sources && (
+                  <div className="mb-8">
+                    <h4 className="text-lg font-bold mb-4">Sources</h4>
+                    <div className="space-y-2">
+                      {problemStatements[selectedProblem].sources!.map(
+                        (src, i) => (
+                          <div key={i}>
+                            <a
+                              href={src}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-primary hover:underline inline-flex items-center break-all"
+                            >
+                              {src}
+                              <ExternalLink className="w-4 h-4 ml-1" />
+                            </a>
                           </div>
                         )
                       )}

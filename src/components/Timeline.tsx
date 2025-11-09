@@ -5,7 +5,7 @@ const Timeline = () => {
   const timelineData = [
     {
       title: "Launch",
-      subtitle: "November 6, 2025",
+      subtitle: "November 9, 2025",
       content: (
         <div className="space-y-4">
           <p className="text-foreground leading-relaxed">
