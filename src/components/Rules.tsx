@@ -165,7 +165,7 @@ const Rules = () => {
                 Download the official presentation template for your final
                 submission
               </p>
-              <a href="/codecratz26.pptx" download>
+              <a href="/Codecratz'26 Ppt.pptx" download>
                 <Button className="btn-gradient group w-full">
                   <Download className="mr-2 w-4 h-4" />
                   Download Template
