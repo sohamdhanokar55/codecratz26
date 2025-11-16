@@ -35,7 +35,7 @@ interface ProblemStatement {
 
 const problemStatements: ProblemStatement[] = [
   {
-    id: "PS-1",
+    id: "PS 01",
     icon: ShieldAlert,
     title: "AI-Powered Cyber Fraud & UPI Scam Detection System",
     subtitle:
@@ -44,14 +44,14 @@ const problemStatements: ProblemStatement[] = [
       "The growing popularity of UPI and digital payments has made financial transactions quick and convenient, but it has also opened new doors for cybercriminals. Fraudsters exploit social engineering, fake payment links, and duplicate UPI handles to trick users into unauthorized transfers. Current systems detect fraud only after the transaction occurs, causing monetary losses and loss of trust. To counter this, the proposed system leverages Artificial Intelligence and Machine Learning to monitor, analyze, and predict fraudulent transaction behavior in real time. It learns user spending habits, identifies anomalies, and warns users before suspicious activity can lead to loss — ensuring safer digital payments for individuals and organizations.",
     features: [
       "AI-based detection of unusual transaction patterns - Machine learning models analyze frequency, amount, receiver ID, and timing of transactions to identify suspicious deviations from normal user behavior.",
-      "Real-time fraud alerts and notifications - When a suspicious transaction or phishing attempt is detected, the system instantly alerts the user through push notifications, email, or SMS to prevent further action.",
-      "Risk scoring for every UPI transaction - Each transaction is assigned a risk score based on multiple parameters such as new payee detection, time anomalies (odd-hour transactions), and device changes.",
+      "Trusted Contacts Verification - The system highlights whether the person you’re paying is a trusted or new/unverified contact, helping users avoid sending money to unknown or suspicious accounts.",
       "Phishing and fake link detection - Integrated NLP-based module detects scam UPI links, fake websites, or QR codes by analyzing URL structures and domain reputation before payment is initiated.",
       "Dashboard for users and admin monitoring - Interactive web/app dashboard displaying real-time flagged transactions, fraud trends, and fraud category breakdown (phishing, impersonation, duplicate ID, etc.).",
     ],
     browniePoints: [
       "AI chatbot for user awareness & reporting - Provides educational insights, scam alerts, and allows users to report suspicious UPI messages or numbers.",
       "Visual analytics & fraud heatmaps - Displays regions or time zones with high scam activity using graphical data visualization.",
+      "Real-time fraud alerts and notifications - When a suspicious transaction or phishing attempt is detected, the system instantly alerts the user through push notifications, email, or SMS to prevent further action.",
     ],
     gradient: "from-emerald-500 to-teal-600",
   },
@@ -80,30 +80,29 @@ const problemStatements: ProblemStatement[] = [
     gradient: "from-blue-500 to-indigo-600",
   },
   {
-    id: "PS-3",
+    id: "PS 03",
     icon: Home,
     title: "Automated Tendering Document Preparation & Bid Evaluation System",
     subtitle:
       "Revolutionizing infrastructure tendering with AI-driven automation for faster, smarter bids.",
     description:
-      "In the infrastructure industry, tendering involves the manual preparation of highly detailed documents, often exceeding a thousand pages, which include company data, past project experience, manpower details, certifications, financials, methodology, costing, and more. This process is time-consuming, resource-intensive, and prone to inefficiencies, taking up to three months for preparation and evaluation. Current methods rely on expert insights and manual brainstorming to finalize bids, resulting in delays and increased operational costs. To address these challenges, develop an AI or software-based system that automates the preparation of tender documents, evaluates bids, and generates concise summaries from vast proposal data. The system should analyze hundreds of past proposals for trend detection and best practices, provide insightful bid evaluation, and significantly reduce the turnaround time from months to days.",
+      "In the infrastructure industry, tendering involves the manual preparation of highly detailed documents, often exceeding a thousand pages, which include company data, past project experience, manpower details, certifications, financials, methodology, costing, and much more. This process is time-consuming, resource-intensive, and prone to inefficiencies, taking up to three months for preparation and evaluation. Current methods rely on expert insights and manual brainstorming to finalize bids, resulting in delays and increased operational costs. To address these challenges, develop an AI or software-based system that automates the preparation of tender documents, evaluates bids, and generates concise summaries from vast proposal data. The system should analyze hundreds of past proposals for trend detection and best practices, provide insightful bid evaluation, and significantly reduce the turnaround time from months to days.",
     features: [
-      "Automated generation of tender documents capturing required company and project details, methodology, costing, and compliance information",
-      "AI-driven analysis of 200 to 300 past proposals to identify patterns, differences, and compliance with industry standards and government requirements",
-      "Summarization of large proposal documents (e.g., 150 pages) into digestible formats for quick client understanding",
-      "Integration with government tender portals for bid submission and status tracking",
-      "Incorporation of external data streams (e.g., RSS feeds) to stay updated on latest bid documentation regulations and practices",
-      "User-friendly dashboard displaying bid status, evaluation metrics, trend analyses, and actionable insights",
-      "Collaboration tools for team inputs from domain experts, including civil engineering professionals",
-      "Role-based access control for team members, reviewers, and management",
-      "Predictive analytics to suggest optimal bid amounts and highlight cost-saving opportunities using historical bids, market trends, material costs, and project variables",
+      "Automated generation of tender documents capturing all required company and project details, methodology, costing, and compliance information.",
+      "AI-driven analysis of 10 to 20 past proposals to identify patterns, key differences, and compliance with industry standards and government requirements.",
+      "Summarization of large proposal documents (e.g., 150 pages) into digestible formats to enable quick client understanding.",
+      "User-friendly dashboard displaying evaluation metrics, trend analyses, and actionable insights.",
+      "Collaboration tools for team inputs from domain experts, including civil engineering professionals.",
+      "Role-based access control for team members, reviewers, and management.",
+      "Predictive analytics to suggest optimal bid amounts and highlight cost-saving opportunities by analyzing historical bid data, market trends, material costs, and project-specific variables.",
     ],
     browniePoints: [
-      "AI-based risk assessment and scoring of bids to maximize chances of winning",
-      "Mobile app support for on-the-go bid monitoring and updates",
-      "Generation of detailed audit logs and compliance documentation",
-      "Cloud-enabled architecture for scalability and secure data handling",
-      "Automated feedback loop from bid outcomes to continuously improve recommendations",
+      "Incorporation of external data streams (e.g., RSS feeds) to stay updated on the latest bid documentation regulations and practices.",
+      "AI-based risk assessment and scoring of bids to maximize chances of winning.",
+      "Mobile app support for on-the-go bid monitoring and updates.",
+      "Generation of detailed audit logs and compliance documentation.",
+      "Cloud-enabled architecture for scalability and secure data handling.",
+      "Automated feedback loop from bid outcomes to continuously improve the model's recommendations.",
     ],
     sources: [
       "https://mahatenders.gov.in/nicgep/app",

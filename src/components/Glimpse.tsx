@@ -57,10 +57,10 @@ const Glimpse = () => {
                         <Play className="w-8 h-8 text-white ml-1" />
                       </div>
                       <h3 className="text-2xl font-bold text-white mb-2">
-                        CODECRATZ'26
+                        CODECRATZ'25
                       </h3>
                       <p className="text-white/80 text-lg">
-                        Watch the Promotional Video
+                        Watch the Video
                       </p>
                     </div>
                   </div>
@@ -84,10 +84,10 @@ const Glimpse = () => {
 
                 {/* Video Info */}
                 <div className="p-8">
-                  <div className="flex items-center justify-between mb-4">
-                    <div>
+                  <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between mb-4">
+                    <div className="text-left">
                       <h3 className="text-2xl font-bold text-foreground mb-2">
-                        CODECRATZ'26 Promotional Video
+                        Glimpse of codecratz 25
                       </h3>
                       <p className="text-muted-foreground">
                         Experience the energy and excitement of our technical
@@ -96,7 +96,7 @@ const Glimpse = () => {
                     </div>
                     <Button
                       onClick={handleVideoClick}
-                      className="bg-gradient-to-r from-primary to-accent text-white hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/25"
+                      className="w-full sm:w-auto bg-gradient-to-r from-primary to-accent text-white hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/25"
                     >
                       <Play className="w-4 h-4 mr-2" />
                       Watch Now
