@@ -93,7 +93,7 @@ const Timeline = () => {
       ),
     },
     {
-      title: " online Judging Round",
+      title: " Online Judging Round",
       subtitle: "December 4th Week, 2025",
       content: (
         <div className="space-y-4">

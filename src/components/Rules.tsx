@@ -519,6 +519,9 @@ const Rules = () => {
                   </motion.span>
                 </motion.div>
                 <p className="text-lg text-muted-foreground leading-relaxed">
+                  Per Team
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed">
                   Only if selected for Grand Final
                 </p>
               </motion.div>
