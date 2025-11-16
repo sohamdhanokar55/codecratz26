@@ -29,7 +29,7 @@ const faqData: FAQItem[] = [
     id: "4",
     question: "How do I register for CODECRATZ'26?",
     answer:
-      "Registration can be done through our official website. Simply fill out the registration form with your details, and complete the payment process. Registration closes on November 25th, 2025. Note: Make sure you read the guidelines and rules before registering.",
+      "Registration can be done through our official website. Simply fill out the registration form with your details, and complete the payment process. Registration closes on November 25th, 2025.",
     category: "Registration",
   },
   {
