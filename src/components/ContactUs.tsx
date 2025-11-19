@@ -38,7 +38,7 @@ const technicalTeam: TeamMember[] = [
   },
   {
     name: "Kirti Karande",
-    role: "Event Coordinator",
+    role: "Staff Coordinator",
     image: "/team/Kirti.png",
     email: "kirti@apvcouncil.in",
     linkedin: "https://www.linkedin.com/in/kirti-karande-65204423/",
