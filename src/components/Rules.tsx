@@ -17,7 +17,7 @@ import { motion } from "framer-motion";
 
 const Rules = () => {
   // Registration deadline - November 30th, 2025
-  const registrationDeadline = new Date("2025-11-25T23:59:59");
+  const registrationDeadline = new Date("2025-11-30T23:59:59");
 
   // Get countdown values
   const registrationCountdown = useCountdown(registrationDeadline);
@@ -224,7 +224,7 @@ const Rules = () => {
           <p className="text-muted-foreground text-center mb-6">
             {" "}
             Registration closes on{" "}
-            <span className="text-primary">November 25th, 2025</span>
+            <span className="text-primary">November 30th, 2025</span>
           </p>
         </Card>
         <br></br>
