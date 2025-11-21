@@ -25,7 +25,7 @@ const Timeline = () => {
     },
     {
       title: "Registration & PPT Submission",
-      subtitle: "November 25, 2025",
+      subtitle: "November 30, 2025",
       content: (
         <div className="space-y-4">
           <p className="text-foreground leading-relaxed">
