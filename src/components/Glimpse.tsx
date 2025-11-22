@@ -13,8 +13,8 @@ const Glimpse = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [videoUrl, setVideoUrl] = useState(""); // This will be set when you have the YouTube video URL
 
-  // Placeholder YouTube video ID - replace with actual video ID when available
-  const youtubeVideoId = "YGi-oec-Bek"; // Replace with actual YouTube video ID
+  // YouTube video ID for CODECRATZ'25
+  const youtubeVideoId = "99x_xlo3lBA";
   const youtubeEmbedUrl = `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&rel=0&modestbranding=1`;
 
   const handleVideoClick = () => {

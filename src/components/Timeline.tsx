@@ -49,7 +49,7 @@ const Timeline = () => {
     },
     {
       title: "Preliminary Round",
-      subtitle: "December 6, 2025",
+      subtitle: "December 2nd Week, 2025",
       content: (
         <div className="space-y-4">
           <p className="text-foreground leading-relaxed">
@@ -73,7 +73,7 @@ const Timeline = () => {
     },
     {
       title: "Shortlisted Teams Announcement",
-      subtitle: "December 10, 2025",
+      subtitle: "December 3rd Week, 2025",
       content: (
         <div className="space-y-4">
           <p className="text-foreground leading-relaxed">
